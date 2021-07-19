@@ -67,11 +67,13 @@ par(mfrow=c(1,2),oma = c(0, 0, 2, 0))
 barplot(BAsum,
         xlab = "Year",
         ylab = "Total Emissions PM2.5 (Tons)",
-        main = "Baltimore City"
+        main = "Baltimore City",
+        ylim = c(0,8000)
 )           
 barplot(LAsum,
         xlab = "Year",
-        main = "Los Angeles County"
+        main = "Los Angeles County",
+        ylim = c(0,8000)
 ) 
 mtext("PM 2.5 Vehicle Emission in Baltimore and Los Angeles, 1999 - 2008",
       line=0, side=3, outer=TRUE, cex=1)
